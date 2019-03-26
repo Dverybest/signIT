@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:orientation="vertical"
+android:layout_height="match_parent" android:background="#90ffffff"
+tools:showIn="@layout/app_bar_dashboard"
+app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+<View
+    android:layout_width="200dp"
+
+    android:id="@+id/view2"
+    android:layout_alignParentRight="true"
+
+    android:background="@drawable/roundedbutton"
+    android:layout_height="15dp"/>
+   <ListView
+       android:layout_width="match_parent"
+       android:layout_below="@id/view2"
+       android:layout_above="@id/view3"
+       android:id="@+id/listView"
+       android:layout_height="match_parent"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:id="@+id/listText"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/colorAccent"
+        android:text="No receipt created yet"
+        android:layout_height="wrap_content" />
+
+<View
+    android:layout_width="200dp"
+    android:layout_alignParentLeft="true"
+    android:layout_above="@id/view4"
+    android:id="@+id/view3"
+    android:background="@drawable/roundedbutton2"
+    android:layout_height="15dp"/>
+
+<View
+    android:layout_width="match_parent"
+    android:layout_gravity="bottom"
+    android:layout_alignParentBottom="true"
+    android:id="@+id/view4"
+    android:background="@color/colorPrimary"
+    android:layout_height="15dp"/>
+</RelativeLayout>

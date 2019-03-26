@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.dverybest.promiserynote.ReceiptActivity"
+    tools:showIn="@layout/activity_receipt">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/container"
+        android:orientation="vertical"
+        android:background="@drawable/seo1"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="#90ffffff"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:id="@+id/toolbar"
+                android:theme="@style/AppTheme.AppBarOverlay">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/cName"
+                    android:textAllCaps="true"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textAlignment="center"
+                    android:text="GO TO PROFILE TO CUSTOMIZE"
+                    android:textSize="30sp"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:layout_alignParentTop="true"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="YOUR ADDRESS GOES HERE"
+                    android:textStyle="bold"
+                     android:maxLines="1"
+                    android:ellipsize="end"
+                    android:id="@+id/address"
+                    android:textColor="@color/colorPrimary"
+                    android:gravity="center"
+                    android:textSize="22sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PHONE OR EMAIL"
+                    android:textStyle="bold"
+                    android:maxLines="1"
+                    android:id="@+id/phone"
+                    android:ellipsize="end"
+                    android:textColor="@color/colorPrimary"
+                    android:gravity="center"
+                    android:textSize="22sp" />
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="CASH Receipt"
+                android:layout_marginRight="5dp"
+                android:textSize="20sp"
+                android:textColor="#FFF"
+                android:textStyle="bold"
+                android:background="@color/colorPrimary"
+                android:textAllCaps="true"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/toolbar"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:text="dd/mm/yyyy"
+                android:layout_marginRight="5dp"
+                android:textSize="20sp"
+                android:id="@+id/date"
+                android:focusable="false"
+                android:layout_alignParentRight="true"
+               android:layout_below="@id/toolbar"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Received from"
+                android:textSize="22sp"
+                android:textColor="#000"
+                android:gravity="center"
+                android:layout_alignBottom="@id/name"
+                android:id="@+id/text1"
+                android:layout_below="@+id/date"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:layout_width="match_parent"
+                android:hint="payer's name"
+                android:layout_marginRight="5dp"
+                android:id="@+id/name"
+                android:ellipsize="end"
+                android:paddingLeft="5dp"
+                android:maxLines="1"
+                android:inputType="text"
+                android:textColor="#000"
+
+                android:layout_toEndOf="@+id/text1"
+                android:textSize="22sp"
+                android:layout_below="@+id/date"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="The sum of"
+                android:textSize="22sp"
+                android:textColor="#000"
+                android:gravity="center"
+                android:layout_alignBottom="@id/sum"
+                android:id="@+id/text2"
+                android:layout_below="@+id/text1"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:layout_width="match_parent"
+                android:hint="amount in words"
+                android:layout_marginRight="5dp"
+                android:id="@+id/sum"
+                android:ellipsize="end"
+                android:textColor="#000"
+                android:paddingLeft="15dp"
+                android:maxLines="1"
+                android:inputType="text"
+
+                android:layout_toEndOf="@+id/text2"
+                android:textSize="22sp"
+                android:layout_below="@+id/name"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_below="@+id/text2"
+                android:id="@+id/lin1"
+
+                android:layout_height="wrap_content">
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:inputType="text"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textSize="22sp"
+                    android:gravity="center"
+                    android:textColor="#000"
+                    android:text="Naira"/>
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:paddingLeft="5dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="22sp"
+                    android:gravity="center"
+                    android:textColor="#000"
+                    android:text="Kobo"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="being payment for"
+                android:textSize="22sp"
+                android:textColor="#000"
+                android:gravity="center"
+                android:layout_alignBottom="@id/paymentFor"
+                android:id="@+id/text3"
+                android:layout_below="@+id/lin1"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:layout_width="match_parent"
+                android:hint="reason"
+                android:inputType="text"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:scrollbars="vertical"
+                android:layout_marginRight="5dp"
+                android:id="@+id/paymentFor"
+                android:textColor="#000"
+                android:paddingLeft="5dp"
+                android:layout_toEndOf="@+id/text3"
+                android:textSize="22sp"
+                android:layout_below="@+id/lin1"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:layout_width="match_parent"
+                android:inputType="text"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:scrollbars="vertical"
+                android:layout_marginRight="5dp"
+
+                android:textColor="#000"
+                android:paddingLeft="5dp"
+                android:id="@+id/ff"
+                android:textSize="22sp"
+                android:layout_below="@+id/paymentFor"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_width="80dp"
+                android:id="@+id/rImg"
+                android:layout_alignRight="@id/rSign"
+                android:layout_alignLeft="@id/rSign"
+                android:layout_below="@+id/ff"
+                android:scaleType="fitXY"
+                android:layout_height="60dp" />
+            <Button
+                android:layout_width="wrap_content"
+                android:text="Receiver sign"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:id="@+id/rSign"
+                android:layout_below="@id/rImg"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="80dp"
+                android:id="@+id/pImg"
+                android:layout_alignLeft="@id/pSign"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/ff"
+                android:scaleType="fitXY"
+                android:layout_height="60dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:text="Payer Sign"
+                android:layout_marginRight="5dp"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:id="@+id/pSign"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_height="wrap_content" />
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

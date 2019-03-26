@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dverybest.promiserynote.SketchActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        android:text="Sketch Here"
+        android:id="@+id/ttt"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:background="@android:color/white">
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="@dimen/weight_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_weight="1"
+            android:layout_gravity="bottom"
+            android:text="cancel"
+            tools:ignore="ButtonStyle"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimary" />
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="@dimen/weight_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_weight="1"
+            android:text="clear"
+            tools:ignore="ButtonStyle"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimary" />
+
+        <Button
+            android:id="@+id/getsign"
+            android:layout_width="@dimen/weight_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_weight="1"
+            android:text="save"
+            tools:ignore="ButtonStyle"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimary" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/canvasLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:orientation="vertical" />
+
+</LinearLayout>
